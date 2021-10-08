@@ -1,0 +1,59 @@
+//scss for add note
+
+.addnote {
+  padding: 50px 0;
+  &__heading {
+    margin: 0 0 30px;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  &__form-wrapper {
+    background-color: #fff;
+    width: 50%;
+    padding: 40px;
+    border: solid #dee2e6;
+    margin: 0 auto;
+  }
+  &__form-control {
+    position: relative;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__form-label {
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+  }
+  &__form-input {
+    height: 44px;
+    font-size: 1.4rem;
+    padding: 0 20px;
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    &:focus {
+      outline: 0;
+      border: 2px solid #807f7f;
+    }
+  }
+  &__form-textarea {
+    height: 250px;
+    border: 2px solid #c5c5c5;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    resize: none;
+    padding: 20px;
+    &:focus {
+      outline: 0;
+      border: 2px solid #807f7f;
+    }
+  }
+  &__submit-btn {
+    width: 100px;
+    padding: 10px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+    border-radius: 5px;
+  }
+}

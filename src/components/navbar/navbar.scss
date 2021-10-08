@@ -1,0 +1,36 @@
+//adding scss fro header component
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #fcf6f6d8;
+  box-shadow: 2px 5px 20px 0 #aea5a559;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left {
+    flex: 1;
+  }
+  &__right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &__brand {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  &__link {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    padding: 16px 0;
+    &:hover {
+      color: #e07f61d8;
+    }
+  }
+}

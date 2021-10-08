@@ -1,0 +1,52 @@
+//container width
+$desktop-width: 135px;
+$tablet-width: 32px;
+$mobile-width: 16px;
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 16px;
+  width: 100%;
+  @media (min-width: 375px) {
+    padding: 0 $mobile-width;
+  }
+  @media (min-width: 768px) {
+    padding: 0 $tablet-width;
+  }
+  @media (min-width: 1200px) {
+    padding: 0 $desktop-width;
+  }
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+//Roboto font import 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+
+//font-family: 'Roboto', sans-serif;
+
+body {
+  margin: 0;
+  color: #000;
+  background-color: rgba(240, 240, 240, 0.863);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+

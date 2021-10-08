@@ -1,0 +1,24 @@
+// showtodo scss
+
+.showtodo {
+  margin: 50px 0;
+  display: block;
+  &__heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 500;
+    margin: 0 0 20px;
+  }
+  &__content-wrapper {
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  &__nodata {
+    color: #505050;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+  }
+}

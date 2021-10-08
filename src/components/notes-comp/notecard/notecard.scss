@@ -1,0 +1,71 @@
+//scss for note card
+.notecard {
+  width: 100%;
+  &__item {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c5c5c5;
+    overflow: auto;
+    width: 100%;
+    padding: 4rem 3rem 3rem;
+    position: relative;
+  }
+  &__header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px;
+  }
+  &__item-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  &__note-value {
+    height: 150px;
+    width: 100%;
+    font-size: 1.4rem;
+    resize: none;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    margin: 0 0 50px;
+    pointer-events: none;
+    &.-update {
+        border: 1px solid #505050;
+        pointer-events: all;
+      &:focus {
+        border: 1px solid #505050;
+      }
+    }
+  }
+  &__last-update {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 1.2rem;
+    color: #505050;
+  }
+  &__item-update {
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    .-edit {
+        color: darkorchid;
+    }
+    .-update {
+        color: #47850a;
+    }
+  }
+  &__delete-icon {
+    position: absolute;
+    height: 2rem;
+    top: 1rem;
+    right: 2rem;
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

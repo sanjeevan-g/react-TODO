@@ -1,0 +1,102 @@
+//todocard component
+.todocard {
+  padding: 10px 0;
+  width: 100%;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+  }
+  &__tile {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+    position: relative;
+  }
+  &__title {
+    margin: 0 0 15px;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  &__descptn {
+    margin: 0 0 15px;
+    font-size: 1.6rem;
+    color: #505050;
+  }
+  &__priority {
+    position: absolute;
+    top: 1rem;
+    right: 4.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 1rem;
+    min-width: 5rem;
+    text-align: center;
+    &.-high {
+      background-color: rgb(245, 67, 61);
+    }
+    &.-medium {
+      background-color: rgb(233, 174, 64);
+    }
+    &.-low {
+      background-color: rgb(183, 201, 82);
+    }
+  }
+  &__complete-btn {
+    padding: 10px;
+    color: #fff;
+    background-color: rgb(57, 49, 77);
+    border-radius: 5px;
+    border: rgb(57, 49, 77);
+    cursor: pointer;
+    text-transform: capitalize;
+  }
+  &__lastupdate {
+    font-size: 1.2rem;
+    color: #505050;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  &__complete-success {
+    font-size: 1.6rem;
+    color: rgb(71, 133, 10);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    &:after {
+      position: absolute;
+      content: "";
+      right: -11px;
+      width: 2px;
+      border-radius: 10px;
+      height: 8px;
+      background-color: #47850a;
+      transform: rotate(-48deg);
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      right: -20px;
+      background-color: #47850a;
+      width: 2px;
+      height: 18px;
+      top: -3px;
+      border-radius: 10px;
+      transform: rotate(46deg);
+    }
+  }
+  &__delete-icon {
+    position: absolute;
+    height: 2rem;
+    top: 1rem;
+    right: 2rem;
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
